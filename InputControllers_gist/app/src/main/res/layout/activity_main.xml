@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear1"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+   <ImageButton
+       android:layout_width="100sp"
+       android:layout_height="100sp"
+       android:layout_gravity="center"
+       android:layout_marginTop="20sp"
+       android:src="@drawable/accessibility"
+
+       android:id="@+id/img1"/>
+   <!--RadioGroup:  is used to group together  one or more  radiobuttons
+   RadioButton :  has two states either checked or unchecked-->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Gender"
+       android:gravity="center"
+       android:textSize="34sp"
+       android:layout_marginTop="20sp"
+       android:textStyle="bold"/>
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/rg1">
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Male"
+          android:id="@+id/rb1"
+          />
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/rb2"
+          android:text="Female"
+           />
+
+   </RadioGroup>
+   <Switch
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="ChangeColor"
+       android:gravity="center"
+       android:id="@+id/switch1"
+       android:onClick="changColor"
+       />
+   <!--switch : is used to display checked and unchecked state of  button
+   providing sliding control to user.
+   It isbasically an On/Off button-->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Programming Languages"
+       android:textSize="34sp"
+       android:gravity="center"
+       android:textColor="#3F51B5"
+       android:textStyle="bold"
+       android:layout_marginTop="20sp"/>
+   <CheckBox
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/check1"
+       android:text="C/C++"/>
+   <CheckBox
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/check2"
+       android:text="Java"/>
+   <CheckBox
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/check3"
+       android:text="Android"/>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:onClick="selectbleItems"
+       android:text="Submit"
+       />
+   <!--When Presenting users with a group of selectable options that are
+    not mutually exclusive.-->
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/spinner1"/>
+   <!--Spinner : is a dropdown list  that allows users to select one value
+   from a set.-->
+   <!--AutoCompletTextView: similar to edittext,except that it shows
+   a list of complete suggesstions automatically while the user is typing-->
+   <AutoCompleteTextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/act1"
+       android:completionThreshold="1"
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30sp"
+       android:text="Text Inputs:\n krishna,anusha,pavan,sunil,sreekanth,
+                 baby,doctor,eagle,meghana,murthy"/>
+
+</LinearLayout>
+</ScrollView>
